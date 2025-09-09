@@ -83,9 +83,8 @@ int consultar()
     	printf("%s", conteudo);
     	printf("\n\n");
 	}
-	
+	fclose(file);
 	system("pause");
-	
 	
 }
 
@@ -106,6 +105,8 @@ int deletar()
 		printf("O usuário não se encontra no sistema!.\n");
 		system("pause");
 	}
+	
+	fclose(file);
 }
 
 int main()
